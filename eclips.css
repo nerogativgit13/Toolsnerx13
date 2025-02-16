@@ -1,6 +1,6 @@
 <?php
 // Token bot dan chat ID
-$botToken = "7911520220:AAGJviCgniZ6_GUe9tPz9gQ0uKkpT2b64fI"; // Ganti dengan token bot Anda
+$botToken = ""; // Ganti dengan token bot Anda
 $chatID = ""; // Ganti dengan chat ID grup Anda
 
 // Data yang akan dikirim
